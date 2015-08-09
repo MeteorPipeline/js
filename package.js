@@ -3,12 +3,12 @@ Package.describe({
   version: '0.0.1',
   summary: 'Javascript Pipeline',
   git: 'https://github.com/MeteorPipeline/js',
-  documentation: 'README.md'
+  documentation: null
 });
 
 Package.onUse(function(api) {
   api.use('isobuild:compiler-plugin@1.0.0');
-  api.use('pipeline:core');
+  api.use('pipeline:core@0.0.1');
   api.addFiles('compiler.js');
   api.export('JavascriptPipelineCompiler');
 });
